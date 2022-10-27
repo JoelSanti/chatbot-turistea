@@ -19,44 +19,22 @@ function recomendarLugares(agent){
 
 */
 
-agent.add(
-  
-  new List({
-
-  title: 'Lista de recomendaciones',
-
-  items: {
-
-  card : new Card({
+agent.add(new Card({
     title: `Title: this is a card title`,
     text: `This is the body text of a card.  You can even use line\n  breaks and emoji! 💁`,
     buttonText: 'Click me',
     buttonUrl: 'https://assistant.google.com/',
     imageUrl: 'https://res.cloudinary.com/dxhd3fys3/image/upload/s--8mebhpRV--/c_scale,w_761/v1666823231/imagenesParaTuristea/Templo_Blanco_de_Kotosh_amb_l_edifici_del_Templo_de_las_Manos_darrera03_ehjmhw.jpg',
     
-  }),
+  }))
 
-  card : new Card({
-    title: `ccccc`,
-    text: `This is the body text of a card.  You can even use line\n  breaks and emoji! 💁`,
-    buttonText: 'Click me',
-    buttonUrl: 'https://assistant.google.com/',
-    imageUrl: 'https://res.cloudinary.com/dxhd3fys3/image/upload/s--8mebhpRV--/c_scale,w_761/v1666823231/imagenesParaTuristea/Templo_Blanco_de_Kotosh_amb_l_edifici_del_Templo_de_las_Manos_darrera03_ehjmhw.jpg',
-    
-  })
-
-  }
-
-
-  })
-);   
 /*
   agent.add(new Suggestion('No afronté el problema'))
   agent.add(new Suggestion('Analicé el problema pero no pude resolverlo'))
   agent.add(new Suggestion('Analicé y resolví el problema correctamente'))
 
 */
- }
+}
 
 let intentMap = new Map();
  
