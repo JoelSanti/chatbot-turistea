@@ -1,5 +1,5 @@
 const {WebhookClient} = require('dialogflow-fulfillment');
-const {Card, Suggestion} = require('dialogflow-fulfillment');
+const {Card,List,Suggestion} = require('dialogflow-fulfillment');
 
 exports.webhook = (req, res) => {
 
@@ -18,13 +18,36 @@ function recomendarLugares(agent){
   agent.add("Bueno tengo una lista de lugares en mi base de datos puedes verlos haber si alguno te agrada");
 
 */
-agent.add(new Card({
+
+agent.add(
+  
+  new List({
+
+  title: 'Lista de recomendaciones',
+
+  items: {
+
+  card : new Card({
     title: `Title: this is a card title`,
     text: `This is the body text of a card.  You can even use line\n  breaks and emoji! 💁`,
     buttonText: 'Click me',
     buttonUrl: 'https://assistant.google.com/',
     imageUrl: 'https://res.cloudinary.com/dxhd3fys3/image/upload/s--8mebhpRV--/c_scale,w_761/v1666823231/imagenesParaTuristea/Templo_Blanco_de_Kotosh_amb_l_edifici_del_Templo_de_las_Manos_darrera03_ehjmhw.jpg',
     
+  }),
+
+  card : new Card({
+    title: `ccccc`,
+    text: `This is the body text of a card.  You can even use line\n  breaks and emoji! 💁`,
+    buttonText: 'Click me',
+    buttonUrl: 'https://assistant.google.com/',
+    imageUrl: 'https://res.cloudinary.com/dxhd3fys3/image/upload/s--8mebhpRV--/c_scale,w_761/v1666823231/imagenesParaTuristea/Templo_Blanco_de_Kotosh_amb_l_edifici_del_Templo_de_las_Manos_darrera03_ehjmhw.jpg',
+    
+  })
+
+  }
+
+
   })
 );   
 /*
