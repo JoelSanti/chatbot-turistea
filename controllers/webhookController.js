@@ -1,5 +1,5 @@
 const {WebhookClient} = require('dialogflow-fulfillment');
-const {Card,List,Suggestion} = require('dialogflow-fulfillment');
+const {Card,Suggestion} = require('dialogflow-fulfillment');
 
 exports.webhook = (req, res) => {
 
@@ -11,13 +11,16 @@ const urlBD = "https://sheet.best/api/sheets/30c2412b-007b-4b1e-95ff-5b4c6fc7cf8
 function cuak(agent) {
    agent.add('patos al agua');
 }
+/*
+function bienvenida(agent) {
+  
+}*/
 
 function recomendarLugares(agent){
 
-/*
-  agent.add("Bueno tengo una lista de lugares en mi base de datos puedes verlos haber si alguno te agrada");
 
-*/
+agent.add("Bueno tengo una lista de lugares en mi base de datos, puedes verlos tal vez alguno te resulte agradable");
+agent.add("Selecciona el lugar y te mostraré más información");
 
 agent.add(new Card({
     title: `Title: this is a card title`,
