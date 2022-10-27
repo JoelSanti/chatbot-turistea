@@ -21,7 +21,7 @@ function recomendarLugares(agent){
 
 agent.add("Bueno tengo una lista de lugares en mi base de datos");
 agent.add("Puedes verlos tal vez alguno te resulte agradable");
-agent.add("Selecciona el lugar y te mostraré más información");
+agent.add("Selecciona el lugar y te mostraré más información &#128071");
 
 agent.add(new Card({
     title: `Title: this is a card title`,
