@@ -71,8 +71,8 @@ agent.add(
 
 function ubicacionKotosh(agent) {
 
-  agent.add("Puedo mostrarte la hubicación exacta del lugar 😉​");
-  agent.add("El icono azul muestra la hubicación de Kotosh en el mapa 👇​");
+  agent.add("Puedo mostrarte la ubicación exacta del lugar 😉​");
+  agent.add("El icono azul muestra la ubicación de Kotosh en el mapa 👇​");
   const payload = { 
     type: "mapa", 
     items: [ 
@@ -96,8 +96,8 @@ function ubicacionKotosh(agent) {
 
 function ubicacionCalicanto(agent) {
 
-  agent.add("Puedo mostrarte la hubicación exacta del lugar 😉​");
-  agent.add("El icono azul muestra la hubicación del Puente Calicanto en el mapa 👇​");
+  agent.add("Puedo mostrarte la ubicación exacta del lugar 😉​");
+  agent.add("El icono azul muestra la ubicación del Puente Calicanto en el mapa 👇​");
   const payload = { 
     type: "mapa", 
     items: [ 
